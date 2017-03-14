@@ -1,5 +1,1 @@
-{"actions":[{"purchase":{"buyProduct":{
-
-}}},{"purchase":{"buyProduct":{
-
-}}}],"triggerName":"act_buy","myLName":"","year":"2016","vers":"4.0.1 01","today":"Tuesday, March 14 2017 01:05:23","custom":""}
+{"actions":[{"purchase":{"buyProduct":{}}},{"purchase":{"buyProduct":{}}}],"triggerName":"act_buy","myLName":""}

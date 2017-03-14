@@ -95,6 +95,8 @@ local function _startDownload(selectedPurchase)
 end
 
 function M.hasDownloaded(epsode)
+    if not model.URL then return true end
+
     local path = system.pathForFile( model.epsodes[epsode].dir, system.ApplicationSupportDirectory )
     -- io.open opens a file at path. returns nil if no file found
     local fh, reason = io.open( path.."/copyright.txt", "r" )

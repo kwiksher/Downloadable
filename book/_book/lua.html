@@ -226,6 +226,11 @@ please set the product names/IDs of the configurations to model.lua</p>
 <li>please set your host URL of web server to YourHost variable
 <img src="img/bandicam 2017-03-14 01-30-28-983.jpg" width="800"></li>
 </ul>
+<h3 id="if-modelurl--nil">if model.URL = nil</h3>
+<ul>
+<li>this means simple IAP store without network download like Kwik3 IAP<h2 id="--downloadbtn-savingtxt-wont-be-used-you-dont-need-to-create-them">-- downloadBtn, savingTxt won&apos;t be used. You don&apos;t need to create them.</h2>
+</li>
+</ul>
 <h2 id="modellua---published">model.lua - published</h2>
 <ul>
 <li>when debug/test in corona simulator finished, the table should be configured with the official productNames from apple, google and amazon for device build.</li>
@@ -296,6 +301,13 @@ please set the product names/IDs of the configurations to model.lua</p>
 <img src="img/bandicam 2017-03-13 17-15-49-411.jpg" width="400"></li>
 </ul>
 <p>this UI creation also works for page03 of ep02_info.psd that has &quot;Epsode02Icon&quot; layer.</p>
+<h3 id="cmdinit">CMD.init</h3>
+<p>Inside CMD.init calls IAP.init to set up the product table from model.lua. For external codes, you may call the following function to check whether a pruduct has been purchased or not.</p>
+<ul>
+<li>local IAP             = require(&quot;components.store.IAP&quot;)</li>
+<li>local productName = &quot;Epsode02&quot;</li>
+<li>IAP.getInventoryValue(&quot;unlock_&quot;..productName) returns true or false</li>
+</ul>
 
                                 
                                 </section>
@@ -335,7 +347,7 @@ please set the product names/IDs of the configurations to model.lua</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lua files","level":"1.2","depth":1,"previous":{"title":"Downloadable Sample","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lua.md","mtime":"2017-03-13T17:18:00.146Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T17:19:35.731Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lua files","level":"1.2","depth":1,"previous":{"title":"Downloadable Sample","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lua.md","mtime":"2017-03-14T08:18:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-14T08:29:59.073Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
