@@ -1,0 +1,10 @@
+settings =
+{
+    plugins =
+    {
+        ["plugin.zip"] =
+        {
+            publisherId = "com.coronalabs",
+        },
+    },
+}

@@ -1,0 +1,3 @@
+{"components":[{"type":"image","layer":"bg","trigger":"","custom":false},{"type":"image","layer":"Epsode02Icon","trigger":"","custom":false},{"type":"image","layer":"savedBtn","trigger":"","custom":false},{"type":"image","layer":"savingTxt","trigger":"","custom":false},{"type":"image","layer":"downloadBtn","trigger":"","custom":false},{"type":"image","layer":"purchaseBtn","trigger":"","custom":false},{"type":"IAP","layer":"page","trigger":"","custom":false},{"type":"swipe","layer":"page","trigger":"bg","custom":false}],"language":{
+
+},"customVO":"","page":"03","numPages":6,"custom":false}

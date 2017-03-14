@@ -1,0 +1,1 @@
+{"mediators":[{"view":"views.page03Scene","mediator":"mediators.page03Mediator","custom":""}],"commands":[{"event":"page03.action_act_buy","command":"commands.page03.action_act_buy","custom":""}]}

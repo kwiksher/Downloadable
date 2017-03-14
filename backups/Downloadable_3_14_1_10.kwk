@@ -1,0 +1,182 @@
+<project id="Downloadable">
+  <settings>
+    <name>Downloadable</name>
+    <media>Book</media>
+    <device>Ultimate Config</device>
+    <OS>all</OS>
+    <zoom>zoomStretch</zoom>
+    <width>1920</width>
+    <height>1280</height>
+    <orientation>Landscape</orientation>
+    <resolution>264</resolution>
+    <bookmark>false</bookmark>
+    <swipe>true</swipe>
+    <pinch>false</pinch>
+    <thumbs>false</thumbs>
+    <navigation>false</navigation>
+    <swipeSpacer>120</swipeSpacer>
+    <thumbW>200</thumbW>
+    <navDirection>Top</navDirection>
+    <thumbH>133</thumbH>
+    <bidi>false</bidi>
+    <rotation>false</rotation>
+    <suspend>false</suspend>
+    <preload>false</preload>
+    <startPage>1</startPage>
+    <endPage>6</endPage>
+    <endAuto>true</endAuto>
+    <expansion>false</expansion>
+    <googleKey/>
+    <iAds>false</iAds>
+    <iAdsKey/>
+    <adMob>false</adMob>
+    <adMobKey/>
+    <adAll>false</adAll>
+    <adX>0</adX>
+    <adY>0</adY>
+    <inApp>
+      <prod id="Epsode02">
+        <pID>4_2_3</pID>
+        <name>Epsode02</name>
+      </prod>
+      <prod id="Epsode03">
+        <pID>6_1_</pID>
+        <name>Epsode03</name>
+      </prod>
+    </inApp>
+    <appID/>
+    <iconReady>false</iconReady>
+    <languages/>
+  </settings>
+  <pages>
+    <page id="toc">
+      <name>toc</name>
+      <number>1</number>
+      <file>~/Documents/Kwik/Downloadable/toc.psd</file>
+      <fileName>toc.psd</fileName>
+      <trigger id="act_buy">
+        <name>act_buy</name>
+        <action id="buy_200">
+          <name>Epsode02</name>
+          <type>Buy Product</type>
+          <inApp>Epsode02</inApp>
+          <inAppID>4_2_3</inAppID>
+          <hide>false</hide>
+        </action>
+        <action id="buy_253">
+          <name>Epsode03</name>
+          <type>Buy Product</type>
+          <inApp>Epsode03</inApp>
+          <inAppID>6_1_</inAppID>
+          <hide>false</hide>
+        </action>
+      </trigger>
+    </page>
+    <page id="ep02_info">
+      <name>ep02_info</name>
+      <number>3</number>
+      <file>~\Documents\Kwik/Downloadable/ep02_info.psd</file>
+      <fileName>ep02_info.psd</fileName>
+      <trigger id="act_buy">
+        <name>act_buy</name>
+        <action id="buy_966">
+          <name>Epsode02</name>
+          <type>Buy Product</type>
+          <inApp>Epsode02</inApp>
+          <inAppID>4_2_3</inAppID>
+          <hide>false</hide>
+        </action>
+      </trigger>
+    </page>
+    <page id="ep01">
+      <name>ep01</name>
+      <number>2</number>
+      <file>~\Documents\Kwik/Downloadable/ep01.psd</file>
+      <fileName>ep01.psd</fileName>
+      <swipePage>true</swipePage>
+      <swipeSpacer>120</swipeSpacer>
+      <scaleW>100</scaleW>
+      <scaleH>100</scaleH>
+      <alpha>100</alpha>
+      <showNav>true</showNav>
+      <adsPage>true</adsPage>
+      <preloadNext>false</preloadNext>
+      <scrnSave>false</scrnSave>
+      <scrnDelay>200</scrnDelay>
+      <scrnFrames>20</scrnFrames>
+      <inApp/>
+    </page>
+    <page id="ep02_1">
+      <name>ep02_1</name>
+      <number>4</number>
+      <file>~\Documents\Kwik/Downloadable/ep02_1.psd</file>
+      <fileName>ep02_1.psd</fileName>
+      <swipePage>true</swipePage>
+      <swipeSpacer>120</swipeSpacer>
+      <scaleW>100</scaleW>
+      <scaleH>100</scaleH>
+      <alpha>100</alpha>
+      <showNav>true</showNav>
+      <adsPage>true</adsPage>
+      <preloadNext>false</preloadNext>
+      <scrnSave>false</scrnSave>
+      <scrnDelay>200</scrnDelay>
+      <scrnFrames>20</scrnFrames>
+      <inApp>
+        <prod id="Epsode02">
+          <name>Epsode02</name>
+          <pageError>toc</pageError>
+          <pID>ep002</pID>
+        </prod>
+      </inApp>
+    </page>
+    <page id="ep02_2">
+      <name>ep02_2</name>
+      <number>5</number>
+      <file>~\Documents\Kwik/Downloadable/ep02_2.psd</file>
+      <fileName>ep02_2.psd</fileName>
+      <swipePage>true</swipePage>
+      <swipeSpacer>120</swipeSpacer>
+      <scaleW>100</scaleW>
+      <scaleH>100</scaleH>
+      <alpha>100</alpha>
+      <showNav>true</showNav>
+      <adsPage>true</adsPage>
+      <preloadNext>false</preloadNext>
+      <scrnSave>false</scrnSave>
+      <scrnDelay>200</scrnDelay>
+      <scrnFrames>20</scrnFrames>
+      <inApp>
+        <prod id="Epsode02">
+          <name>Epsode02</name>
+          <pageError>toc</pageError>
+          <pID>ep002</pID>
+        </prod>
+      </inApp>
+    </page>
+    <page id="ep03">
+      <name>ep03</name>
+      <number>6</number>
+      <file>~\Documents\Kwik/Downloadable/ep03.psd</file>
+      <fileName>ep03.psd</fileName>
+      <swipePage>true</swipePage>
+      <swipeSpacer>120</swipeSpacer>
+      <scaleW>100</scaleW>
+      <scaleH>100</scaleH>
+      <alpha>100</alpha>
+      <showNav>true</showNav>
+      <adsPage>true</adsPage>
+      <preloadNext>false</preloadNext>
+      <scrnSave>false</scrnSave>
+      <scrnDelay>200</scrnDelay>
+      <scrnFrames>20</scrnFrames>
+      <inApp>
+        <prod id="Epsode03">
+          <name>Epsode03</name>
+          <pageError>toc</pageError>
+          <pID>ep003</pID>
+        </prod>
+      </inApp>
+    </page>
+  </pages>
+</project>
