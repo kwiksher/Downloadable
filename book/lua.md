@@ -26,6 +26,11 @@
 * please set your host URL of web server to YourHost variable
 <img src=".\img\bandicam 2017-03-14 01-30-28-983.jpg" width = 800 >
 
+### if model.URL = nil
+* this means simple IAP store without network download like Kwik3 IAP
+-- downloadBtn, savingTxt won't be used. You don't need to create them.
+--
+
 ## model.lua - published 
 * when debug/test in corona simulator finished, the table should be configured with the official productNames from apple, google and amazon for device build.
 
@@ -67,3 +72,10 @@ toc.psd is internnaly handled as page01. Let's show some codes that creates purc
 <img src=".\img\bandicam 2017-03-13 17-15-49-411.jpg" width = 400 >
 
 this UI creation also works for page03 of ep02_info.psd that has "Epsode02Icon" layer.
+
+### CMD.init
+Inside CMD.init calls IAP.init to set up the product table from model.lua. For external codes, you may call the following function to check whether a pruduct has been purchased or not.
+
+* local IAP             = require("components.store.IAP")
+* local productName = "Epsode02"
+* IAP.getInventoryValue("unlock_"..productName) returns true or false

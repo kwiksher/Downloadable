@@ -97,7 +97,7 @@ end
 function M.hasDownloaded(epsode)
     local path = system.pathForFile( model.epsodes[epsode].dir, system.ApplicationSupportDirectory )
     -- io.open opens a file at path. returns nil if no file found
-    local fh, reason = io.open( path.."/version.txt", "r" )
+    local fh, reason = io.open( path.."/copyright.txt", "r" )
     if fh then
         io.close( fh )
         return true

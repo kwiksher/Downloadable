@@ -42,12 +42,14 @@ For Epsode03
 * zip the imagefiles of Epsode3 as Epsode03/assets.zip
 
 Put them on a http server for instance, 
-* http://YourHost:4000/downlodable/Epsode02/assets.zip
-* http://YourHost:4000/downlodable/Epsode03/assets.zip
+* http://YourHost:4000/downloadable/Epsode02/assets.zip
+* http://YourHost:4000/downloadable/Epsode03/assets.zip
 
 # Kwik3
     under costruction
 # Kwik4
+Please download the latest daily build of Corona SDK. 
+* <a ref="https://developer.coronalabs.com/downloads/daily-builds">Daily Build</a>
 
 Please update Kwik4 to the latest one
 * http://kwiksher.com/daily/Kwik4_2017_0314.zip
